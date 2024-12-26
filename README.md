@@ -36,6 +36,12 @@ deep-learning-project/
 bash
 python app.py
 - Open your browser and navigate to `http://localhost:5000`
+- 
+### Dataset Paths
+Please update the paths in the `app.py` file to match your local environment:
+- `train_path`: Path to the training dataset.
+- `valid_path`: Path to the validation dataset.
+- 
 ## Usage
 1. Open the application in your web browser
 2. Click on the upload button or drag and drop a car image
