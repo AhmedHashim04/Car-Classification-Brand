@@ -30,12 +30,12 @@ deep-learning-project/
 ├── templates/
 │ └── deepCars.html # Main HTML template
 ## Installation
-1- Download it 
-2- Run CMD 
-4. Run the application
+- Download it
+-  Run CMD
+-   Run the application
 bash
 python app.py
-5. Open your browser and navigate to `http://localhost:5000`
+- Open your browser and navigate to `http://localhost:5000`
 ## Usage
 1. Open the application in your web browser
 2. Click on the upload button or drag and drop a car image
