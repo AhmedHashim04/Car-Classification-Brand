@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Classification</title>
+    <link rel="stylesheet" href="static/css/deepCars.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">
+                <img src="static\imgs\car logo 2.jpeg" alt="car logo">
+                <h2>Cars Classification</h2>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li class="icon">
+                    <img src="static\imgs\wheel.png" alt="Icon">
+                </li>   
+            </ul>            
+        </nav>
+
+        <!-- Team Members Section -->
+        <ul class="members">
+            <li>TEAM MEMBERS</li>
+            <li>Mahmoud Shahieen</li>
+            <li>Mostafa Emara</li>
+            <li>Mohamed Ashraf</li>
+            <li>Ahmed Fathy</li>
+            <li>Saif El-Rashiedey</li>
+            <li>Adham Nassar</li>
+            <li>Ahmed Hashem</li>
+            <li>Atef Eldeeb</li>
+        </ul>
+
+        <!-- Upload Section -->
+        <div class="section">
+            <form action="/upload" method="POST" enctype="multipart/form-data" id="uploadForm">
+                <h2>Add your Car Image</h2>
+                <p>Upload your car image here, and our deep learning model will provide detailed information about the car model, speed, colors, and more.</p>
+                <label for="imageuploader">
+                    <img src="static\imgs\plus (1).png" class="first-image">
+                    <img src="static\imgs\plus (1).png" class="second-image">
+                    <img src="static\imgs\plus (1).png" class="last-image">
+                </label>
+                <input type="file" id="imageuploader" name="file" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- Display Car Information Section -->
+        <div class="car-info">
+            <img src="static/imgs/default-car.png" alt="Car Image">
+            <div class="prediction-results">
+                <h3 id="car-name">Car Name</h3>
+                <p id="car-details">Upload an image to see the prediction details.</p>
+            </div>
+        </div>
+
+        <!-- Button for Metrics and Graphs -->
+
+
+        <!-- Footer -->
+        <hr class="pipeline">
+        <div id="footer">
+            <div class="part">
+                <h2>Info</h2>
+                <p><span>Names: </span>Mahmoud Eissa, Ahmed Hashem, Mostafa Emara, Mohamed Ashraf, Ahmed Fathy, Saif El-Rashiedey, Adham Nassar</p>
+            </div>
+            <div class="part">
+                <h2>About Us</h2>
+                <p>We are an Artificial Intelligence team from Egypt, and we hope you enjoy our website.</p>
+            </div>
+            <div class="part">
+                <h2>Contact</h2>
+                <p>
+                    <span>Phone Number: </span>01007852868<br>
+                    <span>Email: </span>mahmoudshahieen40@gmail.com<br>
+                    <span>Location: </span>Egypt / Menofia / Shebin El-Kom
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="static\js\deepcars.js"></script>
+</body>
+</html>
