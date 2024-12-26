@@ -23,7 +23,7 @@ if not os.path.exists(train_path) or not os.path.exists(valid_path):
         f"Please update the dataset paths:\n"
         f"Train Path: {train_path}\n"
         f"Validation Path: {valid_path}"
-
+    )
         
 # Data transformations for training and validation
 data_transforms = {
