@@ -17,6 +17,14 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 train_path = r"C:\ME\deep learning project\dataset\Images\Train"
 valid_path = r"C:\ME\deep learning project\dataset\Images\Test"
 
+# Check if the paths exist
+if not os.path.exists(train_path) or not os.path.exists(valid_path):
+    raise FileNotFoundError(
+        f"Please update the dataset paths:\n"
+        f"Train Path: {train_path}\n"
+        f"Validation Path: {valid_path}"
+
+        
 # Data transformations for training and validation
 data_transforms = {
     'train': transforms.Compose([
