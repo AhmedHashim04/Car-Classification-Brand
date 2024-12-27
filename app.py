@@ -14,8 +14,8 @@ import json
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Paths to training and validation datasets
-train_path = r"C:\ME\deep learning project\dataset\Images\Train"
-valid_path = r"C:\ME\deep learning project\dataset\Images\Test"
+train_path = r".\dataset\Images\Train"
+valid_path = r".\dataset\Images\Test"
 
 # Check if the paths exist
 if not os.path.exists(train_path) or not os.path.exists(valid_path):
