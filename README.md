@@ -13,7 +13,7 @@ This project is a web application that uses deep learning to classify car images
 - **Frontend:**
   - HTML5
   - CSS3
-  - JavaScript (Vanilla)
+  - JavaScript 
 - **Backend:**
   - Python
   - Flask
